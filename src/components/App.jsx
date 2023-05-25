@@ -30,12 +30,7 @@ class App extends Component {
         <Section title="Leave your feedback">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
-            onLeaveFeedback={
-              this.handleIncrement
-              /*  [this.handleGoodIncrement,
-              this.handleNeutralIncrement,
-              this.handleBadIncrement] */
-            }
+            onLeaveFeedback={this.handleIncrement}
           />
           <h2>Statistics</h2>
           {this.countTotalFeedback() > 0 ? (
