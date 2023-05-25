@@ -13,3 +13,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  list-style-position: outside;
+  padding: 5px;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.66;
+  padding: 20px 0;
+}
+
+button {
+  padding: 10px;
+  margin: 0 5px;
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px grey;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 1px 7px grey inset;
+color: lightblue;
+}
+
+.buttonList {
+  display: flex;
+}
