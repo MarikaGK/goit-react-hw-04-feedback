@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Section = ({ title, children }) => (
   <>
     <h2>{title}</h2>
@@ -5,5 +7,8 @@ const Section = ({ title, children }) => (
   </>
 );
 
+export default Section;
 
-export default Section
+Section.propTypes = {
+  title: PropTypes.string,
+};

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <>
     <ul className="buttonList">
@@ -13,3 +15,8 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => (
 );
 
 export default FeedbackOptions;
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.shape(PropTypes.string)),
+  onLeaveFeedback: PropTypes.func,
+};
